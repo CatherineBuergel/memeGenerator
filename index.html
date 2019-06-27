@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Say it like you meme it</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <form onsubmit="app.controllers.memeController.addMeme(event)">
+          <input name="topScript" type="text" required placeholder="Top of Meme">
+          <input name="bottomScript" type="text" required placeholder="Bottom of Meme">
+          <input name="img" type="text" required placeholder="Image">
+          <button class="btn btn-info" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="row" id="meme-dropzone">
+      <!-- <div class="col-4 text-center mt-5">
+        <div class="card img-fluid" style="width:500px">
+          <img class="card-img-top" src="https://pbs.twimg.com/media/DFmy6ehXgAEovQg.jpg" alt="Card image"
+            style="width:100%">
+          <div class="card-img-overlay text-center d-flex align-items-end justify-content-center">
+            <h4 class="card-title text-pop">No, This is Patrick</h4>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
